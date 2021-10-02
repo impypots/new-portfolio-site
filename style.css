@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+body {
+    background: #ffaaaaff;
+    transition: 0.3s background ease, 0.3s color ease;
+}
+
+#stars-1 {
+    width: 90vw;
+    position: absolute;
+    z-index: 4;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s opacity ease;
+    top: 0;
+}
+
+#stars-2 {
+    width: 90vw;
+    position: absolute;
+    z-index: 4;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    pointer-events: none;
+    transition: 0.3s opacity ease;
+    top: 0;
+}
+
+#background-start {
+    width: 100vw;
+    max-height: 35vh;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+#background-start-2 {
+    width: 100vw;
+    max-height: 35vh;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index: 1;
+}
+
+
+#navbar {
+    position: relative;
+    z-index: 3;
+    background: rgba(0,0,0,0);
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+header {
+    width: 100vw;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background: black;
+    position: relative;
+    left: 0;
+    top: 0;
+    right:0;
+    transition: 0.3s all ease;
+}
+
+#navbar li {
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    font-size: 2em;
+    transition: 0.3s all ease;
+    margin: 0 0;
+}
+
+#navbar li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#navbar img {
+    width: 6.5vw;
+}
+
+
+
+#landing-text {
+    margin-top: 34vh;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#landing-text h1 {
+    font-family: Lato, sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+#landing-text div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    width: 30ch;
+    margin-top: 2vh;
+    z-index: 2;
+}
+
+#circlepink1 {
+    margin: auto;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    background: #ff6969ff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: fixed;
+    bottom: 18vh;
+    right: 6vh;
+}
+
+#circlepink2 {
+    margin: 1.25vh;
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 100%;
+    background: #ff3a3aff;
+    display: flex;
+    transition: background 0.3s ease;
+}
+
+#circleblue1 {
+    margin: auto;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    background: #ffcacaff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: fixed;
+    bottom: 6vh;
+    right: 6vh
+}
+
+#circleblue2 {
+    margin: 1.25vh;
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 100%;
+    background: #ffdadaff;
+    display: flex;
+    transition: background 0.3s ease;
+}
+
+#pinkufo {
+    height: 4vh;
+    margin: auto;
+    filter: contrast(100%);
+    transition: filter 0.3s ease;
+}
+
+#bluerocket {
+    height: 4vh;
+    margin: auto;
+    filter: contrast(0%);
+    transition: filter 0.3s ease;
+}
+
+#toggle-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.theme-pink {
+    background:#ffaaaaff;
+    color: black;
+}
+
+.theme-blue {
+    background:#89cff0ff;
+    color: white;
+}
+
+#projects {
+    padding-top: 20px;
+    margin: 30vh 0 0 0;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    position: relative;
+}
+
+#projects h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    padding: 5vh 0;
+    z-index: 2;
+}
+
+#project-heading-container {
+    position: relative;
+    min-width: 30vw;
+    margin: 0 35vw;
+}
+
+#staraccentblack1 {
+    position: absolute;
+    width: 4vw;
+    top: 0.5%;
+    right: 12%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#staraccentblack2 {
+    position: absolute;
+    width: 4vw;
+    bottom: 4%;
+    left: 15%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#staraccentwhite1 {
+    position: absolute;
+    width: 4vw;
+    top: 0.5%;
+    right: 12%;
+    z-index: -1;
+}
+
+#staraccentwhite2 {
+    position: absolute;
+    width: 4vw;
+    bottom: 4%;
+    left: 15%;
+    z-index: -1;
+}
+
+#project-nodes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    width: 41vw;
+    height: 50vh;
+    margin-bottom: 10vh;
+}
+
+.project div:first-child {
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 2em;
+    color: black;
+}
+
+#paid {
+    position:relative;
+}
+
+#paid::before {
+    position: absolute;
+    content: 'Paid Project';
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    background: rgba(255,255,255, 1);
+}
+
+.project div:nth-child(2) {
+    text-align: center;
+    width: 50%;
+    position: relative;
+}
+
+.project div:nth-child(2) h2 {
+    font-size: 1.6em;
+    text-align: center;
+    width: 100%;
+    margin-top: 2vh;
+    color: black;
+}
+
+.project div:nth-child(2) h5 {
+    padding-bottom: 2vh;
+    border-bottom: 2px black solid;
+    width: 60%;
+    margin: 0 20%;
+    color: black;
+}
+
+.project div:nth-child(2) div {
+    padding: 2vh 10% 10% 10%;
+    line-height: 1.5;
+    color: black;
+}
+
+.project div:nth-child(2) span {
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.project div:nth-child(2) span a {
+    text-transform:none;
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    position: relative;
+}
+
+.project div:nth-child(2) span a:before {
+    position: absolute;
+    content: '';
+    background: rgba(255, 255, 255, 0);
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    left: 10%;
+    top: 20%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+.project div:nth-child(2) span a:hover:before {
+    position: absolute;
+    content: '';
+    background: white;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    left: 10%;
+    top: 20%;
+}
+
+.project div:nth-child(2) span a:after {
+    position: absolute;
+    content: '';
+    background: rgba(255, 255, 255, 0);
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    right: 10%;
+    top: 20%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.project div:nth-child(2) span a:hover:after {
+    position: absolute;
+    content: '';
+    background: white;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    right: 10%;
+    top: 20%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+#skills {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#skills h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    padding: 5vh 0;
+    z-index: 2;
+}
+
+#about {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#about h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    padding: 5vh 0;
+    z-index: 2;
+}
+
+#contact {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#contact h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    padding: 5vh 0;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 780px) {
+    #background-start, #background-start-2, #stars-1, #stars-2 {
+        display: none;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50vh;
+        padding-top: 1vh;
+        padding-bottom: 0vh;
+        position: fixed;
+        left: 0;
+        top: -38%;
+        right:0;
+        transition: 0.3s all ease;
+    }
+
+    #logo-line {
+        order: 1;
+    }
+
+    #navbar img {
+        width: 9vw;
+    }
+}
