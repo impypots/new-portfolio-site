@@ -10,10 +10,10 @@ let title = document.getElementById("title");
 let navUl = document.querySelector("#navbar ul");
 let starsW = document.getElementById("stars-2");
 let starsB = document.getElementById("stars-1");
-let starAccentB1 =  document.getElementById("staraccentblack1");
-let starAccentB2 =  document.getElementById("staraccentblack2");
-let starAccentW1 =  document.getElementById("staraccentwhite1");
-let starAccentW2 =  document.getElementById("staraccentwhite2");
+let starAccentB1 =  document.querySelectorAll(".staraccentblack1");
+let starAccentB2 =  document.querySelectorAll(".staraccentblack2");
+let starAccentW1 =  document.querySelectorAll(".staraccentwhite1");
+let starAccentW2 =  document.querySelectorAll(".staraccentwhite2");
 let logoLine = document.getElementById("logo-line");
 let navList = document.querySelector("#navbar ul");
 let projects = document.getElementById("projects");
@@ -44,7 +44,10 @@ pinkufoclick.addEventListener("click", ()=> {
         navUl.style.color = "white"
         starsB.style.opacity = "0"
         starsW.style.opacity = "1"
-        starAccentW1.style.opacity = "1"
+        //starAccentW1.style.opacity = "1"
+        starAccentW1.forEach(function(x) {
+            x.style.opacity = "1"
+        })
         starAccentW2.style.opacity = "1"
         starAccentB1.style.opacity = "0"
         starAccentB2.style.opacity = "0"

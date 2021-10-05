@@ -221,13 +221,13 @@ header {
     z-index: 2;
 }
 
-#project-heading-container {
+.project-heading-container {
     position: relative;
     min-width: 30vw;
     margin: 0 35vw;
 }
 
-#staraccentblack1 {
+.staraccentblack1 {
     position: absolute;
     width: 4vw;
     top: 0.5%;
@@ -236,7 +236,7 @@ header {
     opacity: 0;
 }
 
-#staraccentblack2 {
+.staraccentblack2 {
     position: absolute;
     width: 4vw;
     bottom: 4%;
@@ -245,7 +245,7 @@ header {
     opacity: 0;
 }
 
-#staraccentwhite1 {
+.staraccentwhite1 {
     position: absolute;
     width: 4vw;
     top: 0.5%;
@@ -253,7 +253,7 @@ header {
     z-index: -1;
 }
 
-#staraccentwhite2 {
+.staraccentwhite2 {
     position: absolute;
     width: 4vw;
     bottom: 4%;
@@ -395,6 +395,7 @@ header {
 }
 
 #skills {
+    padding-top: 20px;
     margin: 0;
     font-family: 'Lato', sans-serif;
     width: 100vw;
@@ -410,7 +411,32 @@ header {
     z-index: 2;
 }
 
+#skills h2 {
+    text-align: center;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+#skills li {
+    list-style: circle;
+    
+}
+
+#skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skills-container div {
+    min-width: 40%;
+    min-height: 60vh;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5vh 0;
+}
+
 #about {
+    padding-top: 20px;
     margin: 0;
     font-family: 'Lato', sans-serif;
     width: 100vw;
@@ -427,6 +453,7 @@ header {
 }
 
 #contact {
+    padding-top: 20px;
     margin: 0;
     font-family: 'Lato', sans-serif;
     width: 100vw;
