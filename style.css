@@ -227,6 +227,40 @@ header {
     margin: 0 35vw;
 }
 
+#staraccentblack1 {
+    position: absolute;
+    width: 4vw;
+    top: 0.5%;
+    right: 12%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#staraccentblack2 {
+    position: absolute;
+    width: 4vw;
+    bottom: 4%;
+    left: 15%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#staraccentwhite1 {
+    position: absolute;
+    width: 4vw;
+    top: 0.5%;
+    right: 12%;
+    z-index: -1;
+}
+
+#staraccentwhite2 {
+    position: absolute;
+    width: 4vw;
+    bottom: 4%;
+    left: 15%;
+    z-index: -1;
+}
+
 .staraccentblack1 {
     position: absolute;
     width: 4vw;
@@ -282,6 +316,14 @@ header {
     background: rgba(255, 255, 255, 0.1);
     font-size: 2em;
     color: black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project div:first-child img {
+    max-height: 100%;
 }
 
 #paid {
@@ -424,15 +466,40 @@ header {
 
 #skills-container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: black;
 }
 
 #skills-container div {
-    min-width: 40%;
-    min-height: 60vh;
+    width: 40%;
+    min-height: 70vh;
     background: rgba(255, 255, 255, 0.2);
     margin: 5vh 0;
+}
+
+#skills-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+#skills-container ul li {
+    min-width: 28%;
+    margin: 4vh 0;
+    text-align: center;
+    list-style: none;
+    padding: 5px 0;
+    color: black;
+}
+
+#skills-container ul i {
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 1.8em;
+    line-height: 1.5em;
 }
 
 #about {
@@ -452,6 +519,40 @@ header {
     z-index: 2;
 }
 
+
+
+#about-container {
+    width: 90%;
+    background:rgba(255, 255, 255, 0.2);
+    margin: 3vh 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+#about-container > div {
+    max-width: 80%;
+    line-height: 2em;
+    padding: 25px;
+}
+
+#about-container > div:last-of-type {
+    display: flex;
+}
+
+#about-container > div:last-of-type div {
+    padding: 0 10px;
+}
+
+.blocked {
+    background: black;
+}
+
+.blocked:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
 #contact {
     padding-top: 20px;
     margin: 0;
@@ -459,6 +560,57 @@ header {
     width: 100vw;
     height: 100vh;
     position: relative;
+}
+
+#contact-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: black;
+    margin-top: 3vh;
+}
+
+#contact button {
+    border-radius: 50px;
+    background: white;
+    color: black;
+    outline:none;
+    border: 1px solid pink;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#contact button:hover {
+    cursor:pointer;
+    background: rgba(0,0,0,0);
+}
+
+#contact-container div {
+    background: rgba(255, 255, 255, 0.2);
+    min-width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-container input {
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    margin-right: 2vw;
+    margin-left: 0.25vw;
+}
+
+#contact-container textarea {
+    border-radius: 5px;
+    border: none;
+    margin-top: 2vh;
+}
+
+#contact-container div p {
+    padding: 15px;
+    font-size: 1.2em;
 }
 
 #contact h1 {

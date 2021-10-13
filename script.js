@@ -11,13 +11,15 @@ let navUl = document.querySelector("#navbar ul");
 let starsW = document.getElementById("stars-2");
 let starsB = document.getElementById("stars-1");
 let starAccentB1 =  document.querySelectorAll(".staraccentblack1");
-let starAccentB2 =  document.querySelectorAll(".staraccentblack2");
+let starAccentB2 =  document.querySelector("#staraccentblack2");
 let starAccentW1 =  document.querySelectorAll(".staraccentwhite1");
-let starAccentW2 =  document.querySelectorAll(".staraccentwhite2");
+let starAccentW2 =  document.querySelector("#staraccentwhite2");
 let logoLine = document.getElementById("logo-line");
 let navList = document.querySelector("#navbar ul");
 let projects = document.getElementById("projects");
 let skills = document.getElementById("skills");
+
+console.log(starAccentB1);
 
 logoLine.addEventListener("click", ()=> {
     console.log(navList.style.top);
@@ -45,11 +47,14 @@ pinkufoclick.addEventListener("click", ()=> {
         starsB.style.opacity = "0"
         starsW.style.opacity = "1"
         //starAccentW1.style.opacity = "1"
-        starAccentW1.forEach(function(x) {
-            x.style.opacity = "1"
-        })
+        starAccentW1.forEach((e) => {
+            e.style.opacity = "1"
+        });
         starAccentW2.style.opacity = "1"
-        starAccentB1.style.opacity = "0"
+        //starAccentB1.style.opacity = "0"
+        starAccentB1.forEach((e) => {
+            e.style.opacity = "0"
+        });
         starAccentB2.style.opacity = "0"
     }
 });
@@ -71,9 +76,15 @@ bluerocketclick.addEventListener("click", ()=> {
         navUl.style.color = "black"
         starsB.style.opacity = "1"
         starsW.style.opacity = "0"
-        starAccentW1.style.opacity = "0"
+        //starAccentW1.style.opacity = "0"
+        starAccentW1.forEach((e) => {
+            e.style.opacity = "0"
+        });
         starAccentW2.style.opacity = "0"
-        starAccentB1.style.opacity = "1"
+        //starAccentB1.style.opacity = "1"
+        starAccentB1.forEach((e) => {
+            e.style.opacity = "1"
+        });
         starAccentB2.style.opacity = "1"
     }
 });
