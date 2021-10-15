@@ -324,6 +324,7 @@ header {
 
 .project div:first-child img {
     max-height: 100%;
+    max-width: 90%;
 }
 
 #paid {
@@ -645,6 +646,284 @@ header {
     }
 
     #navbar img {
-        width: 9vw;
+        width: 10vw;
+    }
+
+    #landing-text {
+        margin-top: 20vh;
+        
+    }
+
+    #landing-text h1 {
+        max-width: 90%;
+    }
+
+    #landing-text div {
+        max-width: 90%;
+    }
+
+    #projects h1 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 3em;
+        padding: 5vh 0;
+        z-index: 2;
+        width: 100vw;
+        
+    }
+
+    .project-heading-container {
+        position: relative;
+        min-width: 30vw;
+        margin: 0 0;
+    }
+
+    .project-heading-container img {
+        display: none;
+    }
+
+    #project-nodes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 8vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .project {
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        width: 80vw;
+        min-height: 53vh;
+        height:unset;
+        margin-bottom: 10vh;
+    }
+
+    .project div:nth-child(2) span a {
+        text-transform:none;
+        text-decoration: none;
+        color: black;
+        width: 50%;
+        position: relative;
+    }
+
+    .project div:nth-child(2) span a:before {
+        position: absolute;
+        content: '';
+        background: rgba(255, 255, 255, 0);
+        width: 15px;
+        height: 15px;
+        left: 10%;
+        top: 20%;
+        transform-origin: center;
+    }
+    .project div:nth-child(2) span a:hover:before {
+        position: absolute;
+        content: '';
+        background: white;
+        width: 15px;
+        height: 15px;
+        left: 10%;
+        top: 20%;
+    }
+    
+    .project div:nth-child(2) span a:after {
+        position: absolute;
+        content: '';
+        background: rgba(255, 255, 255, 0);
+        width: 15px;
+        height: 15px;
+        right: 10%;
+        top: 20%;
+        transform-origin: center;
+    }
+    
+    .project div:nth-child(2) span a:hover:after {
+        position: absolute;
+        content: '';
+        background: white;
+        width: 15px;
+        height: 15px;
+        right: 10%;
+        top: 20%;
+        transform-origin: center;
+    }
+
+    #toggle-box {
+        display: none;
+    }
+
+    #skills {
+        padding-top: 20px;
+        margin: 0;
+        width: 100vw;
+        min-height: 100vh;
+        height:unset;
+        position: relative;
+    }
+
+    #skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #skills-container div {
+        width: 80%;
+        min-height: 40vh;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 5vh 0;
+    }
+
+    #about {
+        padding-top: 20px;
+        margin: 0;
+        width: 100vw;
+        min-height: 100vh;
+        height:unset;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #skills li {
+        width: 50%;
+    }
+
+    #about-container > div:last-of-type {
+        flex-direction:column;
+    }
+
+    #about-container > div:last-of-type div {
+        margin-bottom: 4vh;
+    }
+
+    #contact-container div {
+        min-width: unset;
+        max-width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-container p {
+        max-width: 80%;
+    }
+
+    #contact-container input {
+        border-radius: 50px;
+        border: none;
+        padding: 5px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 1vh;
+    }
+
+    #contact-container form {
+        max-width: 100%;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.2);
+        width: 80vw;
+        height: 60vh;
+        margin-bottom: 10vh;
+    }
+    
+    .project div:first-child {
+        width: 100%;
+        height: 40vh;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 2em;
+        color: black;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project div:nth-child(2) {
+        text-align: center;
+        width: 100%;
+        height: unset;
+        min-height: 40vh;
+        position: relative;
+    }
+
+    .project div:first-child img {
+        max-height: 90%;
+    }
+
+    .project div:nth-child(2) span a {
+        text-transform:none;
+        text-decoration: none;
+        color: black;
+        width: 50%;
+        position: relative;
+    }
+
+    .project div:nth-child(2) span a:before {
+        position: absolute;
+        content: '';
+        background: rgba(255, 255, 255, 0);
+        width: 15px;
+        height: 15px;
+        left: 20%;
+        top: 20%;
+        transform-origin: center;
+    }
+    .project div:nth-child(2) span a:hover:before {
+        position: absolute;
+        content: '';
+        background: white;
+        width: 15px;
+        height: 15px;
+        left: 20%;
+        top: 20%;
+    }
+    
+    .project div:nth-child(2) span a:after {
+        position: absolute;
+        content: '';
+        background: rgba(255, 255, 255, 0);
+        width: 15px;
+        height: 15px;
+        right: 20%;
+        top: 20%;
+        transform-origin: center;
+    }
+    
+    .project div:nth-child(2) span a:hover:after {
+        position: absolute;
+        content: '';
+        background: white;
+        width: 15px;
+        height: 15px;
+        right: 20%;
+        top: 20%;
+        transform-origin: center;
+    }
+
+    #landing-text h1 {
+        font-size: 2.4em;
+    }
+
+    #navbar img {
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .project div:nth-child(2) {
+        text-align: center;
+        width: 100%;
+        height: unset;
+        min-height: 43vh;
+        position: relative;
     }
 }
