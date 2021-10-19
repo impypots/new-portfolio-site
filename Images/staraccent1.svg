@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="47.489914mm"
+   height="67.73983mm"
+   viewBox="0 0 47.489914 67.73983"
+   version="1.1"
+   id="svg4129"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="staraccent1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4131"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.39732043"
+     inkscape:cx="81.797959"
+     inkscape:cy="184.98923"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4126" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-83.468048,-99.979856)">
+    <g
+       id="g2468"
+       inkscape:export-filename="C:\Users\terra\Documents\Projects\Mallory-Phay-Redux\Images\staraccentwhite1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       style="fill:#000000"
+       transform="translate(-30.306135,-150.88957)">
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.40451;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.991936;paint-order:markers fill stroke"
+         id="circle20025-4-8"
+         cx="152.84445"
+         cy="301.23312"
+         r="5.1864362" />
+      <path
+         sodipodi:type="star"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:10.6307;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.991936;paint-order:markers fill stroke"
+         id="path20013-6-0"
+         inkscape:flatsided="false"
+         sodipodi:sides="4"
+         sodipodi:cx="11.192038"
+         sodipodi:cy="348.58176"
+         sodipodi:r1="50.756813"
+         sodipodi:r2="13.523677"
+         sodipodi:arg1="1.5602386"
+         sodipodi:arg2="2.3456368"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         transform="matrix(0.4678442,0,0,0.4678442,132.28301,111.53243)"
+         d="m 11.727904,399.33574 -9.9970591,-41.09087 -41.2927919,-9.12725 41.0908759,-9.99706 9.1272421,-41.29279 9.997059,41.09088 41.292792,9.12724 -41.090876,9.99706 z" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.28747;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.991936;paint-order:markers fill stroke"
+         id="circle334647-9"
+         cx="145.19885"
+         cy="315.45444"
+         r="3.1548223" />
+    </g>
+  </g>
+</svg>

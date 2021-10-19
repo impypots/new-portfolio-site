@@ -18,6 +18,7 @@ let logoLine = document.getElementById("logo-line");
 let navList = document.querySelector("#navbar ul");
 let projects = document.getElementById("projects");
 let skills = document.getElementById("skills");
+let svgfill = document.querySelectorAll("svg");
 
 console.log(starAccentB1);
 
@@ -46,16 +47,20 @@ pinkufoclick.addEventListener("click", ()=> {
         navUl.style.color = "white"
         starsB.style.opacity = "0"
         starsW.style.opacity = "1"
-        //starAccentW1.style.opacity = "1"
-        starAccentW1.forEach((e) => {
-            e.style.opacity = "1"
+        // svgfill.style.fill = "white"
+        svgfill.forEach((e) => {
+            e.style.fill = "white"
         });
-        starAccentW2.style.opacity = "1"
-        //starAccentB1.style.opacity = "0"
-        starAccentB1.forEach((e) => {
-            e.style.opacity = "0"
-        });
-        starAccentB2.style.opacity = "0"
+        // starAccentW1.style.opacity = "1"
+        // starAccentW1.forEach((e) => {
+        //     e.style.opacity = "1"
+        // });
+        // starAccentW2.style.opacity = "1"
+        // starAccentB1.style.opacity = "0"
+        // starAccentB1.forEach((e) => {
+        //     e.style.opacity = "0"
+        // });
+        // starAccentB2.style.opacity = "0"
     }
 });
 
@@ -76,16 +81,20 @@ bluerocketclick.addEventListener("click", ()=> {
         navUl.style.color = "black"
         starsB.style.opacity = "1"
         starsW.style.opacity = "0"
+        // svgfill.style.fill = "black"
+        svgfill.forEach((e) => {
+            e.style.fill = "black"
+        });
         //starAccentW1.style.opacity = "0"
-        starAccentW1.forEach((e) => {
-            e.style.opacity = "0"
-        });
-        starAccentW2.style.opacity = "0"
+        //starAccentW1.forEach((e) => {
+        //    e.style.opacity = "0.5"
+        //});
+        //starAccentW2.style.opacity = "0"
         //starAccentB1.style.opacity = "1"
-        starAccentB1.forEach((e) => {
-            e.style.opacity = "1"
-        });
-        starAccentB2.style.opacity = "1"
+        //starAccentB1.forEach((e) => {
+        //    e.style.opacity = "0.7"
+        //});
+        //starAccentB2.style.opacity = "1"
     }
 });
 

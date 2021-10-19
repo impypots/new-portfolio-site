@@ -225,6 +225,33 @@ header {
     position: relative;
     min-width: 30vw;
     margin: 0 35vw;
+    overflow-y:hidden;
+}
+
+.project-heading-container svg:first-of-type {
+    
+    width: 4vw;
+    height: 100px;
+    top: -8%;
+    right: 12%;
+    z-index: -1;
+    opacity: 1;
+    transition: ease 0.3s fill;
+}
+
+.project-heading-container svg:nth-of-type(2) {
+    height: 100px;
+    opacity: 1;
+    width: 4vw;
+    bottom: -17%;
+    left: 15%;
+    z-index: -1;
+    transition: ease 0.3s fill;
+}
+
+svg {
+    position: absolute;
+    fill: white;
 }
 
 #staraccentblack1 {
@@ -251,6 +278,7 @@ header {
     top: 0.5%;
     right: 12%;
     z-index: -1;
+    opacity: 0;
 }
 
 #staraccentwhite2 {
@@ -323,7 +351,8 @@ header {
 }
 
 .project div:first-child img {
-    max-height: 100%;
+    max-height: 70%;
+    min-height: 50%;
     max-width: 90%;
 }
 
@@ -624,6 +653,10 @@ header {
 
 @media only screen and (max-width: 780px) {
     #background-start, #background-start-2, #stars-1, #stars-2 {
+        display: none;
+    }
+
+    svg {
         display: none;
     }
 
