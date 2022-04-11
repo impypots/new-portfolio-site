@@ -2,10 +2,12 @@
     margin: 0;
     padding:0;
     overflow-x: hidden;
+    
 }
 
 body {
-    background: #ffaaaaff;
+    background: hsl(0, 100%, 83%);
+    
     transition: 0.3s background ease, 0.3s color ease;
 }
 
@@ -107,7 +109,7 @@ header {
 
 
 #landing-text {
-    margin-top: 34vh;
+    margin-top: 14vh;
     display: flex;
     flex-flow:column;
     justify-content: center;
@@ -119,6 +121,7 @@ header {
     font-family: Lato, sans-serif;
     font-size: 3em;
     font-weight: 900;
+    
 }
 
 #landing-text div {
@@ -127,6 +130,7 @@ header {
     width: 30ch;
     margin-top: 2vh;
     z-index: 2;
+    
 }
 
 #circlepink1 {
@@ -211,6 +215,199 @@ header {
     font-family: 'Lato', sans-serif;
     width: 100vw;
     position: relative;
+}
+
+#project-grid {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 4vh;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: black;
+}
+
+.grid-item-focus {
+    margin-bottom: 20px;
+}
+
+.grid-item-focus h2 {
+    margin: 18px 0;
+}
+
+.grid-item-focus img {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    max-height: 40%;
+}
+
+.grid-item-focus p {
+    line-height: 3em;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.grid-item-focus span {
+    margin-top: 30px;
+}
+
+
+#project-grid p {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#project-grid span {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+
+#project-grid article {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.grid-item {
+    display: flex;
+    padding: 30px;
+}
+
+.grid-item h5 {
+    margin: 10px 0;
+}
+
+.grid-item p {
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.grid-item > div {
+    width: 50%;
+}
+
+
+
+.grid-item img {
+   width: 80%;
+   margin-left: 10%;
+   height: 70%;
+   margin-top: 15%;
+   border-radius: 5px;
+   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
+    
+    
+}
+
+.grid-item a {
+    display: block;
+}
+
+article div {
+    position: relative;
+}
+
+
+
+article span {
+    bottom: 2vh;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+}
+
+article span a {
+    text-transform:none;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    position: relative;
+    
+}
+
+article span a:before {
+    position: absolute;
+    content: '';
+    background: rgba(255, 255, 255, 0);
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    left: 10%;
+    top: 20%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+article span a:hover:before {
+    position: absolute;
+    content: '';
+    background: white;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    left: 10%;
+    top: 20%;
+}
+
+article span a:after {
+    position: absolute;
+    content: '';
+    background: rgba(255, 255, 255, 0);
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    right: 10%;
+    top: 20%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+article span a:hover:after {
+    position: absolute;
+    content: '';
+    background: white;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+    right: 10%;
+    top: 20%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+#project-grid h2 {
+    text-align: center;
+}
+
+#project-grid h5 {
+    text-align: center;
+}
+
+#project-grid article:nth-of-type(1) {
+    grid-row-start: span 4;
+    grid-column-start: span 1;
+    
+}
+
+#project-grid article:nth-of-type(2) {
+    grid-row-start: span 1;
+  
+}
+
+#project-grid article:nth-of-type(3) {
+    grid-row-start: span 1;
+    
+}
+
+#project-grid article:last-of-type {
+    grid-row-start: span 1;
+ 
 }
 
 #projects h1 {
@@ -368,6 +565,7 @@ svg {
     padding: 10px 15px;
     font-size: 14px;
     border-radius: 25px;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.5);
     background: rgba(255,255,255, 1);
 }
 
@@ -651,12 +849,53 @@ svg {
     z-index: 2;
 }
 
+#wave-container {
+    position: relative;
+    min-height: 20vh;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    pointer-events: none;
+
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+    
+}
+
+.wave #shape-1 {
+    fill: #000000;
+    transition: fill 0.3s ease;
+}
+
+.wave #shape-2 {
+    fill: red;
+    
+    transform-origin: center;
+    
+}
+
+
 @media only screen and (max-width: 780px) {
     #background-start, #background-start-2, #stars-1, #stars-2 {
         display: none;
     }
 
     svg {
+        display: none;
+    }
+
+    .wave {
         display: none;
     }
 
@@ -818,6 +1057,31 @@ svg {
         height:unset;
         position: relative;
     }
+
+    #project-grid {
+        width: 90vw;
+        margin-left: 5vw;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .grid-item-focus {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-item {
+        flex-direction: column;
+    }
+
+    .grid-item > div {
+            width: 100%;
+    }
+
+    .grid-item-focus span {
+        padding: 0 0 30px 0;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -948,6 +1212,18 @@ svg {
 
     #navbar img {
         width: 15vw;
+    }
+
+    #project-grid {
+        width: 90vw;
+        margin-left: 5vw;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-item-focus p {
+        font-size: 16px;
+        line-height: 2em;
+        text-align: left;
     }
 }
 

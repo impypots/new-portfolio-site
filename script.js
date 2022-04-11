@@ -19,6 +19,7 @@ let navList = document.querySelector("#navbar ul");
 let projects = document.getElementById("projects");
 let skills = document.getElementById("skills");
 let svgfill = document.querySelectorAll("svg");
+let shape1 = document.getElementById("shape-1");
 
 console.log(starAccentB1);
 
@@ -41,8 +42,9 @@ pinkufoclick.addEventListener("click", ()=> {
        
         document.body.classList.add("theme-pink")
         document.body.classList.remove("theme-blue")
-        backgroundBlack.style.opacity = "1"
-        backgroundWhite.style.opacity = "0"
+        // backgroundBlack.style.opacity = "1"
+        // backgroundWhite.style.opacity = "0"
+        shape1.style.fill = "black"
         navUl.style.background = "black"
         navUl.style.color = "white"
         starsB.style.opacity = "0"
@@ -75,8 +77,9 @@ bluerocketclick.addEventListener("click", ()=> {
     
         document.body.classList.add("theme-blue")
         document.body.classList.remove("theme-pink")
-        backgroundWhite.style.opacity = "1"
-        backgroundBlack.style.opacity = "0"
+        // backgroundWhite.style.opacity = "1"
+        // backgroundBlack.style.opacity = "0"
+        shape1.style.fill = "white"
         navUl.style.background = "white"
         navUl.style.color = "black"
         starsB.style.opacity = "1"
